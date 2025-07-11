@@ -60,13 +60,16 @@ export default function Intro() {
       >
         <span className="font-bold">Ahmad Mayiludin.</span>
       </motion.h1>
-      <motion.h4
-        className="mb-10 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl"
+      <motion.p
+        className="mb-10 mt-4 px-4 text-lg !leading-[1.5] sm:text-xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Seorang mahasiswa Teknik Informatika yang bersemangat dalam membangun aplikasi web yang fungsional dan modern.
-      </motion.h4>
+        <b>Software Developer & Tech Enthusiast</b> dengan keahlian di bidang{" "}
+        <b>Web Development, Computer Vision,</b> dan <b>UI/UX Design</b>. Saya
+        bersemangat mengubah ide kompleks menjadi solusi teknologi yang
+        fungsional dan modern.
+      </motion.p>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}

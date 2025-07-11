@@ -36,7 +36,7 @@ export default function Skills() {
       <div className="bg-emerald-400 absolute bottom-[-rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#183D3D]"></div>
 
       <div className="flex justify-center">
-        <SectionHeading>🎯 Specialized Skills</SectionHeading>
+        <SectionHeading>🎯 Teknologi & Keahlian</SectionHeading>
         <BurstBload2 />
       </div>
       <div className="grid xl:grid-cols-5 md:grid-cols-4 grid-cols-4 xl:gap-10 md:gap-8 gap-7 items-center">
