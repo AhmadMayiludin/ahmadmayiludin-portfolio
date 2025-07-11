@@ -31,7 +31,7 @@ export default function Intro() {
           >
             <Image
               src="/images/profile_2.jpg"
-              alt="Bayu Maulana Ikhsan"
+              alt="Ahmad Mayiludin"
               width="192"
               height="192"
               quality="95"
@@ -58,20 +58,14 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Bayu Maulana Ikhsan.</span>
+        <span className="font-bold">Ahmad Mayiludin.</span>
       </motion.h1>
       <motion.h4
         className="mb-10 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">3 years</span> of experience in fullstack
-        development, using{" "}
-        <span className="font-bold">Laravel and Codeigniter</span> for
-        developing a website and web applications.
-        {/* I enjoy building <span className="italic">sites & apps</span>.  */}
-        {/* My focus is
-        <span className="underline"> Laravel and React (Next.js)</span>. */}
+        Seorang mahasiswa Teknik Informatika yang bersemangat dalam membangun aplikasi web yang fungsional dan modern.
       </motion.h4>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -85,7 +79,8 @@ export default function Intro() {
           href="#contact"
           className="group mr-2 bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here{" "}
+          {/* DIUBAH: Disesuaikan ke Bahasa Indonesia */}
+          Hubungi saya{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -108,7 +103,7 @@ export default function Intro() {
       >
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/bayumaulanaikhsan/"
+          href="https://www.linkedin.com/in/ahmad-mayiludin-462371250/"
           target="_blank"
         >
           <BsLinkedin />
@@ -116,21 +111,14 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="mailto:bayu.maulanaikhsan123@gmail.com"
-          target="_blank"
-        >
-          <RiMailSendLine />
-        </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Bayumaul"
+          href="https://github.com/AhmadMayiludin"
           target="_blank"
         >
           <FaGithubSquare />
         </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.instagram.com/bayumaulana_ikhsan/"
+          href="https://www.instagram.com/ahmadmayiludin"
           target="_blank"
         >
           <BsInstagram />

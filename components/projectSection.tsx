@@ -175,7 +175,7 @@ const ProjectSection: React.FC = () => {
               </div>
               <div className="mb-4">
                 <h3 className="text-lg font-semibold mb-2 dark:text-white">
-                  Features I Worked On:
+                  Fitur Utama:
                 </h3>
                 <ul className="list-disc list-inside">
                   {selectedProject.features.map((feature, index) => (
@@ -189,7 +189,7 @@ const ProjectSection: React.FC = () => {
                 </ul>
               </div>
               <h4 className="text-lg font-semibold mb-2 dark:text-white">
-                Click the image to enlarge
+                Klik gambar untuk memperbesar
               </h4>
               <div className="flex space-x-4 flex-wrap mb-4">
                 {selectedProject.screenshots.map((screenshot, index) => (
@@ -203,7 +203,7 @@ const ProjectSection: React.FC = () => {
                 ))}
               </div>
               <h4 className="text-lg font-semibold mb-2 dark:text-white">
-                Language and Tools
+                Bahasa dan Tools
               </h4>
               <div className="flex justify-between items-end">
                 <div className="flex space-x-2">

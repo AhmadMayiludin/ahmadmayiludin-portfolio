@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 const baseUrlMeta = `${new URL("https://bayumaulanaikhsan.my.id/")}`;
 export const metadata = {
   metadataBase: new URL("https://bayumaulanaikhsan.my.id/"),
-  title: "Bayu Maulana Ikhsan | Portfolio",
+  title: "Ahmad Mayiludin | Portfolio",
   description:
     "Bayu Maulana Ikhsan is a web developer with 2 years of experience.",
   author: "Bayu Maulana Ikhsan",

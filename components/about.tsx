@@ -22,13 +22,14 @@ export default function About() {
         <SectionHeading>👨‍💻 About Me</SectionHeading>
         <BurstBload />
       </div>
-      <p>
-        Hello, I'm Bayu! I am dedicated to continuously expanding my knowledge
-        and skills in{" "}
-        <span className="font-medium">fullstack web development </span> while
-        also learning about new technologies. I am proficient in developing web
-        applications, creating APIs, and striving to deliver high-quality code.
-      </p>
+      <p className="mb-3">
+    Hallo, Saya Ahmad Mayiludin! Saya adalah mahasiswa semester 4 di Universitas Buana Perjuangan Karawang dengan IPK 3.75. Di luar akademik, saya aktif menempa soft skill melalui berbagai organisasi kampus, mulai dari Himpunan Mahasiswa Teknik Informatika (HIMATIF) hingga Unit Kegiatan Mahasiswa.
+  </p>
+
+  {/* Paragraf kedua */}
+  <p>
+    Saya memiliki pengalaman dalam pengembangan web menggunakan <span className="font-medium">PHP dan Laravel</span>, serta pengembangan aplikasi mobile dengan <span className="font-medium">Ionic Angular.</span> Saya berkomitmen untuk terus belajar, berkembang, dan memberikan kontribusi nyata di dunia teknologi.
+  </p>
     </motion.section>
   );
 }

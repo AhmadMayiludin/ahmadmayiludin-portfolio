@@ -1,7 +1,30 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import { GiPodium } from "react-icons/gi";
+import { FaBullhorn } from "react-icons/fa";
+import { FaChalkboardTeacher } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { GiMicrophone } from "react-icons/gi";
+
+
+// pengalaman kepanitiaan
+import workshopAiImg1 from "@/public/images/kegiatan/AI-1.jpg";
+import workshopAiImg2 from "@/public/images/kegiatan/AI-2.jpg";
+import workshopAiImg3 from "@/public/images/kegiatan/AI-3.jpg";
+import rektorCupImg1 from "@/public/images/kegiatan/RSC-1.jpg";
+import rektorCupImg2 from "@/public/images/kegiatan/RSC-2.jpg";
+import seminarPasarModalImg from "@/public/images/kegiatan/pspm.jpg";
+import seminarPasarModalImg1 from "@/public/images/kegiatan/pspm1.jpg";
+import coachingClinicImg1 from "@/public/images/kegiatan/clc1.jpg";
+import coachingClinicImg2 from "@/public/images/kegiatan/clc2.jpg";
+import coachingClinicImg3 from "@/public/images/kegiatan/clc3.jpg";
+import mcSekolahPasarModalImg1 from "@/public/images/kegiatan/spm1.jpg";
+import mcSekolahPasarModalImg2 from "@/public/images/kegiatan/spm2.jpg";
+import mcSekolahPasarModalImg3 from "@/public/images/kegiatan/spm3.jpg";
+
+
+
 import wartafenoImg from "@/public/images/project/wartefeno/1.png";
 import siakadImg from "@/public/images/project/siakad/1.png";
 import amikomImg from "@/public/images/project/amikom/1.png";
@@ -34,275 +57,356 @@ export const links = [
   },
 ] as const;
 export const experiencesData = [
-  {
-    title: "Web Programmer",
-    location: "BKAD Kabupaten Sleman",
-    description:
-      "Developing and overcoming user problems of Sistem Informasi Keuangan Daerah (SIKD) and Sistem Pengajuan Surat Rekening (SPSR) related to applicable policies of Sleman including, troubleshooting, disaster recovery planning & execution.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Jan 2023 - Present",
-  },
-  {
-    title: "Software Engineer",
-    location: "PT Mandala Dwipantara Proteksi",
-    description:
-      "Developing and overcoming user problems of NRE-CORE related to applicable policies of PT. Reasuransi Nasional Indonesia including, troubleshooting, disaster recovery planning & execution.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Mar 2022 - Des 2022",
-  },
-  {
-    title: "Programmer with Kampus Merdeka",
-    location: "PT. Time Excelindo",
-    description:
-      "Develop features in HR TOOLS, including: fixing bugs, developing attendance with shifts and distances, applying for leave and overtime permits, and developing employee assessments",
-    icon: React.createElement(CgWorkAlt),
-    date: "Aug 2021 - Feb 2022",
-  },
-  {
-    title: "Internship Back End Developer",
-    location: "PT Zeniora Edukasi Teknologi",
-    description:
-      "Contribute to the development, fixing bugs, discussion about the new fiture in website.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Jul 2021 - Sep 2021",
-  },
-] as const;
+    {
+        title: "Divisi Acara - Workshop Nasional AI",
+        location: "Workshop 'Artificial Intelligence in The World of Data Science'",
+        description: "Bertugas mengatur seluruh susunan acara dan melakukan koordinasi langsung dengan para pemateri ahli di bidangnya.", // 
+        date: "2024", // 
+        icon: React.createElement(GiPodium),
+        // DIUBAH: imageUrl menjadi imageUrls dan berisi array gambar
+        imageUrls: [workshopAiImg1, workshopAiImg2, workshopAiImg3],
+    },
+    {
+        title: "Divisi Humas - Rektor Sport Champion",
+        location: "Kompetisi Olahraga Tingkat Universitas",
+        description:
+            "Mengelola komunikasi dan publikasi acara untuk meningkatkan kesadaran serta partisipasi peserta antar prodi.", // 
+        date: "2024", // 
+        icon: React.createElement(FaBullhorn),
+        imageUrls: [rektorCupImg1, rektorCupImg2],
+    },
+    {
+        title: "Divisi Acara - Seminar Nasional Pasar Modal",
+        location: "Seminar 'Pengenalan Sekolah Pasar Modal pada Gen Z'",
+        description:
+            "Bertanggung jawab atas kelancaran teknis acara dan membantu kesiapan narasumber dari awal hingga akhir seminar.", // 
+        date: "2025", // 
+        icon: React.createElement(GiPodium),
+        imageUrls: [seminarPasarModalImg, seminarPasarModalImg1],
+    },
+    {
+        title: "Divisi Acara - Coaching Clinic Investasi",
+        location: "Coaching Clinic 'Cerdas Bertransaksi dan Investasi Hadapi Era Digital'",
+        description:
+            "Menyusun rundown acara secara detail dan memastikan setiap sesi berjalan sesuai dengan rencana yang telah ditetapkan.",
+        date: "2025",
+        icon: React.createElement(FaChalkboardTeacher),
+        imageUrls: [coachingClinicImg1, coachingClinicImg2, coachingClinicImg3],
+    },
+    {
+        title: "Master of Ceremony (MC) - Sekolah Pasar Modal",
+        location: "Edukasi Pasar Modal oleh IDX & MNC Sekuritas",
+        description:
+            "Membawakan dan memandu jalannya acara edukasi pasar modal, bekerja sama langsung dengan narasumber dari Bursa Efek Indonesia dan MNC Sekuritas.",
+        date: "2025",
+        icon: React.createElement(GiMicrophone),
+        imageUrls: [mcSekolahPasarModalImg1, mcSekolahPasarModalImg2, mcSekolahPasarModalImg3],
+    },
+] as const; 
+
+// lib/data.ts
 
 export const projectsData = [
   {
-    title: "Sistem Informasi Logistik CGN",
+    title: "Website Donasi Yayasan",
     description:
-      "The CGN Logistics Information System is a digital platform that integrates inventory management, inventory control, delivery monitoring, and logistics performance analysis to maximize the efficiency of CGN's logistics operations. The system also provides high security and an intuitive user interface.",
+      "Membangun platform donasi online untuk yayasan yang dilengkapi fitur verifikasi transaksi dan manajemen program, mempermudah proses penggalangan dana secara transparan.",
     screenshots: [
-      "images/project/cekresi/1.png",
-      "images/project/cekresi/3.png",
-      "images/project/cekresi/4.png",
-      "images/project/cekresi/2.png",
-      "images/project/cekresi/6.png",
+      "images/project/donasi/1.png",
+      "images/project/donasi/2.png",
+      "images/project/donasi/3.png",
+      "images/project/donasi/4.png",
+      "images/project/donasi/5.jpg",
+      "images/project/donasi/6.jpg",
+      "images/project/donasi/7.jpg",
     ],
-    image: "images/project/cekresi/1.png",
+    image: "images/project/donasi/1.png",
     tech: [
+      "/images/icon/php.svg",
       "/images/icon/bootstrap.svg",
+      "/images/icon/tailwind.svg",
+    ],
+    demoUrl: null,
+    githubUrl: null,
+    features: [
+      "Donasi Online: Sistem pembayaran untuk memudahkan donatur berpartisipasi.",
+      "Verifikasi Transaksi: Admin dapat memverifikasi setiap donasi yang masuk.",
+      "Manajemen Program: Mengelola berbagai program penggalangan dana yang sedang berjalan.",
+    ],
+    languages: ["PHP Native", "Bootstrap", "Tailwind CSS"],
+  },
+  {
+    title: "Sistem Manajemen Restoran - RestoPOS",
+    description:
+      "Aplikasi web komprehensif untuk Admin, Pelayan, dan Koki. Sistem ini menangani manajemen menu, pengelolaan pesanan, laporan penjualan, hingga pemantauan aktivitas dapur secara terpusat.", // 
+    // TODO: Ganti dengan path screenshot aplikasi admin/pelayan Anda
+  
+    screenshots: [
+      "images/project/restopos-admin/1.png",
+      "images/project/restopos-admin/2.png",
+      "images/project/restopos-admin/3.png",
+      "images/project/restopos-admin/4.png",
+    ],
+    image: "images/project/restopos-admin/1.png",
+    tech: [
       "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
-      "/images/icon/jquery-vertical.svg",
       "/images/icon/mysql.svg",
-    ],
-    demoUrl: null,
-    githubUrl: null,
-    features: [
-      "Inventory Management: Tracks, organizes, and optimizes stock levels for efficient resource allocation.",
-      "Inventory Control: Empowers precise oversight with real-time updates on stock movements for accurate decision-making.",
-      "Delivery Monitoring: Offers real-time visibility into logistics, enabling proactive responses to ensure timely deliveries.",
-      "Performance Analysis: Utilizes powerful analytics to gain insights, identify improvements, and enhance operational efficiency.",
-    ],
-    languages: ["Laravel 10", "Bootstrap 5", "MYSQL 8.0", "Jquery"],
-  },
-  {
-    title: "E-Commerce Ikan Me",
-    description:
-      "This website is an innovative platform designed to assist freshwater fishermen and fish farmers in the village of Berasan Mulya in marketing their products online. We are dedicated to supporting the local economy and the conservation of natural resources.",
-    screenshots: [
-      "images/project/ikanme/1.png",
-      "images/project/ikanme/2.png",
-      "images/project/ikanme/3.png",
-      "images/project/ikanme/4.png",
-      // "images/project/ikanme/5.png",
-      "images/project/ikanme/6.png",
-    ],
-    image: "images/project/ikanme/1.png",
-    tech: [
       "/images/icon/bootstrap.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
-      "/images/icon/jquery-vertical.svg",
-      "/images/icon/mysql.svg",
+       "/images/icon/php.svg",
+      
+    ],
+    demoUrl: null,
+    githubUrl: null, // Isi dengan link ke repo backend Laravel jika ada
+    features: [
+      "Manajemen Data Master: Admin dapat mengelola data menu, pengguna, dan meja.", // 
+      "Dasbor Analitik: Menampilkan laporan penjualan dan item terlaris dalam bentuk grafik.", // 
+      "Alur Pesanan Real-time: Pesanan dari kasir/pelayan langsung terkirim ke dasbor koki.", // 
+      "Manajemen Hak Akses: Sistem membedakan fitur yang dapat diakses oleh Admin, Kasir, dan Koki.", // 
+    ],
+    languages: ["Laravel", "PHP", "MySQL", "API"],
+  },
+  {
+    title: "Aplikasi Pelanggan - RestoPOS",
+    description:
+      "Aplikasi mobile untuk pelanggan yang memudahkan pemesanan makanan, reservasi meja, dan pembayaran digital. Dibangun untuk memberikan pengalaman pengguna yang praktis dan efisien.", //
+    // TODO: Ganti dengan path screenshot aplikasi pelanggan Anda
+    screenshots: [
+      "images/project/restopos-pelanggan/1.png",
+      "images/project/restopos-pelanggan/2.png",
+      "images/project/restopos-pelanggan/3.png",
+      "images/project/restopos-pelanggan/4.png",
+    ],
+    image: "images/project/restopos-pelanggan/2.png",
+    // TODO: Pastikan Anda punya ikon untuk teknologi ini
+    tech: [
+      "/images/icon/ionic.svg", // atau /images/icon/flutter.svg
+      "/images/icon/angular.svg",
+      "/images/icon/typescript.svg",
+    ],
+    demoUrl: null,
+    githubUrl: null, // Isi dengan link ke repo frontend pelanggan jika ada
+    features: [
+      "Pemesanan Online: Memungkinkan pelanggan memesan menu untuk dine-in atau take-away.", // 
+      "Reservasi Meja: Fitur untuk memesan meja dengan memilih tanggal, jam, dan jumlah tamu.", // 
+      "Pembayaran Digital: Terintegrasi dengan metode pembayaran QRIS dan Tunai.", // 
+      "Lacak Status Pesanan: Pelanggan dapat melihat status pesanan mereka secara real-time.", // 
+    ],
+    languages: ["Ionic", "Angular", "TypeScript"], // Sesuaikan dengan teknologi yang Anda gunakan
+  },
+  {
+title: "Desain UI/UX - Aplikasi Restoran RestoPOS",
+description:
+"Merancang seluruh antarmuka (UI) dan pengalaman pengguna (UX) untuk sistem restoran 'RestoPOS'. Desain ini mencakup alur untuk empat peran pengguna: Pelanggan, Pelayan/Kasir, Koki, dan Admin, dengan fokus pada kemudahan penggunaan dan efisiensi operasional.",
+// TODO: Gunakan gambar komposit dari Figma sebagai gambar utama
+image: "images/project/UIUX/1.png",
+// TODO: Siapkan beberapa screenshot close-up dari desain terbaik Anda
+screenshots: [
+        "images/project/UIUX/1.png",,
+    ],
+// Teknologi yang digunakan adalah tools desain
+tech: [
+"/images/icon/figma.svg",
+],
+// TODO: Jika prototype Figma Anda bisa diakses publik, taruh link-nya di sini
+demoUrl: null,
+githubUrl: null, // Tidak perlu untuk proyek desain
+features: [
+"Desain User Flow untuk 4 Peran Pengguna",
+"Prototyping Interaktif untuk Simulasi Aplikasi",
+"Perancangan Mockup Detail untuk Aplikasi Mobile dan Web",
+"Desain Berbasis Komponen yang Konsisten",
+],
+languages: ["Figma", "Draw.io"],
+  },
+  {
+    title: "Desain UI/UX - Website Manajemen UMKM",
+    description:
+      "Perancangan desain antarmuka (UI) dan pengalaman pengguna (UX) untuk platform web UMKM. Desain mencakup halaman marketing (landing page, layanan) dan dashboard internal untuk manajemen penjualan, stok, dan laporan.",
+    // TODO: Siapkan screenshot dari desain Figma Anda
+    screenshots: [
+        "images/project/umkm-deign/1.png",
+    ],
+    image: "images/project/umkm-deign/figma-overview.png",
+    tech: ["/images/icon/figma.svg"],
+    demoUrl: null, // Anda bisa isi dengan link prototype Figma
+    githubUrl: null,
+    features: [
+      "Desain Halaman Marketing (Homepage, Layanan, Tentang Kami).",
+      "Dashboard Analitik untuk Visualisasi Data Penjualan dan Stok.",
+      "Fitur Manajemen Data (Produk, Pelanggan, Laporan).",
+      "Alur Pendaftaran (Sign Up) dan Pembayaran Pengguna.",
+    ],
+    languages: ["Figma"],
+  },
+  {
+    title: "Deteksi Kendaraan (YOLOv5)",
+    description:
+      "Proyek Computer Vision yang mengaplikasikan algoritma populer YOLOv5 untuk mendeteksi berbagai jenis objek kendaraan secara real-time dari sebuah gambar atau video.",
+    screenshots: [
+      "images/project/yolo/1.jpg",
+      "images/project/yolo/2.jpg",
+    ],
+    image: "images/project/yolo/1.jpg",
+    tech: [
+      "/images/icon/python.svg",
     ],
     demoUrl: null,
     githubUrl: null,
     features: [
-      "Online Marketplace: Provides a dedicated space for fishermen and fish farmers to create and manage their online stores, showcasing their products to a wider audience.",
-      "Buy and Sell: Enables users to easily buy and sell freshwater products, fostering a vibrant online marketplace that connects local producers with consumers.",
-      "Shipping and Delivery: Facilitates a streamlined shipping process, allowing sellers to arrange for the efficient and timely delivery of their products to customers.",
+      "Deteksi Objek Real-time: Menggunakan model terlatih untuk mengidentifikasi kendaraan.",
+      "Algoritma YOLOv5: Implementasi salah satu algoritma deteksi objek tercepat.",
+      "Aplikasi Computer Vision: Menunjukkan kemampuan dalam penerapan machine learning.",
     ],
-    languages: ["Laravel 9", "Bootstrap 5", "MYSQL 8.0", "Jquery"],
+    languages: ["Python", "YOLOv5", "Pandas", "Matplotlib"],
   },
   {
-    title: "Match Schedule MPL Indonesia",
+    title: "Aplikasi Pendaftaran Pasien Online",
     description:
-      "This website is a demonstration of a clone that imitates the appearance and features of the official MPL Indonesia website. It provides information similar to the actual MPL Indonesia website, including match schedules, team listings, and standings.",
+    "Sistem pendaftaran dan pemeriksaan pasien untuk sebuah klinik berbasis web, mempermudah alur administrasi dan pencatatan data medis.",
+    // TODO: Siapkan screenshot untuk proyek ini
     screenshots: [
-      "images/project/mpl/2.png",
-      "images/project/mpl/3.png",
-      "images/project/mpl/4.png",
-      "images/project/mpl/5.png",
+    "images/project/pasien/1.png",
+    "images/project/pasien/2.png",
+    "images/project/pasien/3.png",
     ],
-    image: "images/project/mpl/1.png",
+    image: "images/project/pasien/1.png",
+            
     tech: [
-      "/images/icon/next-js.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-      "/images/icon/framer-motion.svg",
-    ],
-    demoUrl: "https://mpl-id.vercel.app/",
-    githubUrl: "https://github.com/Bayumaul/mpl-id-next",
-    features: [
-      "Match Schedules: Provides information about the schedule of matches in the MPL Indonesia league.",
-      "Team Listings: Displays a list of teams participating in the MPL Indonesia league.",
-      "Standings: Shows the current standings of the teams in the league, indicating their performance.",
-      "Past Match Results: Displays the results and summaries of previous matches in the MPL Indonesia league.",
-    ],
-    languages: ["Next JS 13", "Tailwind CSS 3", "Framer Motion", "Typescript"],
-  },
-  {
-    title: "SIAKAD SDN Tegalrandu",
-    description:
-      "This is a web-based application about creating report students, crud kelas, crud mata pelajaran, crud siswa, crud nilai students to report with kurikulum 2013",
-    screenshots: [
-      "images/project/siakad/2.png",
-      "images/project/siakad/3.png",
-      "images/project/siakad/4.png",
-      "images/project/siakad/5.png",
-      "images/project/siakad/7.png",
-    ],
-    image: "images/project/siakad/1.png",
-    tech: [
-      "/images/icon/bootstrap.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
-      "/images/icon/jquery-vertical.svg",
-      "/images/icon/mysql.svg",
+    "/images/icon/php.svg",
+    "/images/icon/mysql.svg",
     ],
     demoUrl: null,
     githubUrl: null,
     features: [
-      "Create, Read, Update and Delete Data Kelas, Siswa, and Mata Pelajaran.",
-      "Create, Read, Update and Delete Data Nilai Siswa.",
-      "Create, Read, Update and Delete Data User to Access App.",
-      "If you add teacher data, it will Automatically Send an Email.",
-      "You can add data with Multiple Row or Import from File Excel.",
-      "Students can print their own report cards so parents can see student learning progress.",
-      "Show Data Development of Student Grades With Charts.",
+    "Pendaftaran Pasien Online: Memudahkan pasien baru untuk mendaftar tanpa antre.",
+    "Pencatatan Pemeriksaan: Dokter dapat menginput hasil pemeriksaan secara digital.",
     ],
-    languages: ["Laravel 8", "Bootstrap 4", "MYSQL 5.3", "Jquery"],
+    languages: ["PHP Native", "MySQL"],
   },
   {
-    title: "Wartafeno",
+    title: "Proyek Data Mining - Online Retail",
     description:
-      "Wartafeno is a website that is used to convey news from the LPMT Fenomena of UNY, this website was made using wordpress and elementor and mysql database.",
+      "Melakukan segmentasi pelanggan dari dataset Online Retail yang berisi 500 ribu data. Proyek ini menggunakan teknik data mining dengan Python, Pandas, dan Matplotlib untuk analisis.",
+    // TODO: Siapkan screenshot untuk proyek ini, misalnya grafik atau tabel hasil.
     screenshots: [
-      "images/project/wartefeno/2.png",
-      "images/project/wartefeno/3.png",
-      "images/project/wartefeno/4.png",
-      "images/project/wartefeno/5.png",
+      "images/project/datamining/1.png",
+      "images/project/datamining/2.png",
+      "images/project/datamining/3.png",
     ],
-    image: "images/project/wartefeno/1.png",
+    image: "images/project/datamining/1.png",
+    // TODO: Pastikan Anda memiliki ikon untuk teknologi ini.
     tech: [
-      "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/8a/Elementor_icon.svg",
-      "/images/icon/mysql.svg",
-    ],
-    demoUrl: "https://wartafeno.com/",
-    githubUrl: null,
-    features: [
-      "Redesign with new theme and design.",
-      "Fixed some bug searching.",
-      "Add Dark Mode.",
-      "Added an author page to see which authors have written any articles.",
-    ],
-    languages: ["Wordpress", "MYSQL", "Elementor"],
-  },
-  {
-    title: "HR-TOOLS",
-    description:
-      "This is HR TOOLS which is used to manage employee data, starting from personal data, employee performance appraisal work to the attendance system.",
-    image: "images/project/hr-tools/1.png",
-    screenshots: [
-      "images/project/hr-tools/2.png",
-      "images/project/hr-tools/3.png",
-      "images/project/hr-tools/4.png",
-      "images/project/hr-tools/5.png",
-      "images/project/hr-tools/6.png",
-    ],
-    tech: [
-      "/images/icon/bootstrap.svg",
-      "/images/icon/leaflet.svg",
-      "/images/icon/codeigniter.svg",
-      "/images/icon/jquery-vertical.svg",
-      "/images/icon/mysql.svg",
+      "/images/icon/python.svg",
+      "/images/icon/pandas.svg",
     ],
     demoUrl: null,
     githubUrl: null,
     features: [
-      "Fixed Bug Create, Read, Update and Delete Data Employee, Siswa, and Mata Pelajaran.",
-      "Create, Read, Update and Delete Employee Recruitment.",
-      "Create, Read, Update and Delete Data Employee Performance appraisal.",
-      "Create, Read, Update and Delete Data Employee attendance using a location with a leaflet.",
+      "Analisis Dataset Besar: Mengolah dan menganalisis dataset retail dengan 500.000 baris data.",
+      "Segmentasi Pelanggan: Menerapkan teknik data mining untuk mengelompokkan pelanggan berdasarkan perilaku.",
+      "Visualisasi Data: Menggunakan Matplotlib untuk membuat visualisasi dari hasil analisis data.",
     ],
-    languages: ["Codeigniter 3", "Bootstrap 3", "MYSQL 5.3", "Jquery"],
+    languages: ["Python", "Pandas", "Matplotlib"],
+  },
+  {
+    title: "Deteksi dan Pengenalan Wajah",
+    description:
+      "Aplikasi desktop yang dibangun dengan Python untuk mendeteksi dan mengenali wajah secara real-time menggunakan webcam. Model dilatih menggunakan algoritma Machine Learning seperti K-NN dan SVM.",
+    // TODO: Ganti nama file sesuai dengan screenshot yang Anda simpan
+    screenshots: [
+      "images/project/face-recognition/1.jpg",
+    ],
+    image: "images/project/face-recognition/1.jpg", // Gunakan screenshot terbaik Anda di sini
+    // TODO: Pastikan Anda memiliki ikon untuk teknologi ini
+    tech: [
+      "/images/icon/python.svg",
+      "/images/icon/opencv.svg", // Anda perlu mencari ikon OpenCV
+    ],
+    demoUrl: null, // Biarkan null karena ini bukan web
+    githubUrl: null, // Ganti dengan link GitHub ke proyek ini jika ada
+    features: [
+      "Real-time Face Detection: Mendeteksi wajah dari input webcam secara langsung.",
+      "Face Recognition: Mengenali wajah yang terdeteksi sebagai identitas tertentu (misal: 'ahmad').",
+      "Model Training: Menggunakan Scikit-learn untuk melatih model klasifikasi (K-NN, SVM).",
+      "Image Processing: Memanfaatkan library OpenCV untuk pemrosesan gambar seperti resize dan grayscale.",
+    ],
+    languages: ["Python", "OpenCV", "Scikit-learn"],
+  },
+    {
+  title: "Desain Topologi Jaringan Universitas",
+  description:
+  "Merancang dan mensimulasikan topologi jaringan untuk sebuah universitas dengan 2 gedung dan 4 fakultas menggunakan Cisco Packet Tracer. Proyek ini mengimplementasikan routing dinamis antar gedung (BGP) dan internal (OSPF).",
+  // TODO: Ganti dengan path screenshot Anda
+  screenshots: [
+  "images/project/jaringan/topologi.png",
+  ],
+  image: "images/project/jaringan/topologi.png", // Gunakan screenshot topologi utama di sini
+  // TODO: Siapkan ikon untuk teknologi ini
+  tech: [
+  "/images/icon/cisco.svg",
+  ],
+  demoUrl: null,
+  // TODO: Ganti dengan link ke repositori GitHub Anda untuk proyek ini
+  githubUrl: "#",
+  features: [
+  "Routing Dinamis Antar Gedung dengan BGP: Mengkonfigurasi setiap gedung sebagai Autonomous System (AS) yang berbeda.",
+  "Routing Internal Gedung dengan OSPF: Memastikan semua perangkat di dalam satu gedung dapat berkomunikasi secara efisien.",
+  "Implementasi VLAN: Memisahkan traffic antar departemen untuk meningkatkan keamanan dan performa jaringan.",
+  "Konfigurasi DHCP & IP Statis: Menerapkan skema pengalamatan IP yang berbeda sesuai kebutuhan setiap fakultas.",
+  ],
+  languages: ["Cisco Packet Tracer", "OSPF", "BGP", "VLAN", "DHCP"],
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "PHP",
-  "JavaScript",
-  "TypeScript",
-  "Tailwind",
-  "Bootstrap",
-  "Codeigneter",
-  "Laravel",
-  "React",
-  "MYSQL",
-  "Git",
-  // "Framer Motion",
-] as const;
+// Pastikan kode ini ada di dalam file lib/data.ts Anda
 
-export const skilss = [
+export const skills = [
+  {
+    id: 1,
+    imgUrl: "/images/icon/html.svg",
+  },
   {
     id: 2,
-    imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    imgUrl: "/images/icon/css.svg",
   },
   {
     id: 3,
-    imgUrl: "/images/icon/bootstrap.svg",
-  },
-  {
-    id: 8,
     imgUrl: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
   },
   {
     id: 4,
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+    imgUrl: "/images/icon/python.svg",
   },
   {
     id: 5,
-    imgUrl: "/images/icon/codeigniter.svg",
-  },
-  {
-    id: 7,
     imgUrl: "/images/icon/mysql.svg",
-  },
-
-  {
-    id: 9,
-    imgUrl: "/images/icon/typescript.svg",
-  },
-  {
-    id: 10,
-    imgUrl: "/images/icon/javascript.svg",
-  },
-  {
-    id: 1,
-    imgUrl: "/images/icon/jquery-vertical.svg",
   },
   {
     id: 6,
-    imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
   },
-  // {
-  //   id: 10,
-  //   imgUrl:
-  //     "https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg",
-  // },
+  {
+    id: 7,
+    imgUrl: "/images/icon/ionic.svg",
+  },
+  {
+    id: 8,
+    imgUrl: "/images/icon/bootstrap.svg",
+  },
+  {
+    id: 9,
+    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+  },
+  {
+    id: 10,
+    imgUrl: "/images/icon/figma.svg",
+  },
+  {
+    id: 11,
+    imgUrl: "/images/icon/canva.svg",
+  },
+  {
+    id: 12,
+    imgUrl: "/images/icon/git.svg",
+  },
 ] as const;

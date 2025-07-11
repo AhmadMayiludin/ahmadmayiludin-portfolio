@@ -33,16 +33,15 @@ export default function Contact() {
     >
       <div className="bg-[#fbe2e3] absolute bottom-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#7d5353]"></div>
 
-      <SectionHeading>Get In Touch</SectionHeading>
+      <SectionHeading>Hubungi Saya</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Additionally, I'm currently open for freelance or part-time
-        opportunities. If you have an interesting project or need extra hands on
-        deck, don't hesitate to get in touch!
+        Saat ini saya terbuka untuk kesempatan freelance atau pekerjaan paruh waktu. Jika Anda memiliki proyek menarik atau membutuhkan bantuan, jangan ragu untuk menghubungi saya.
         <br />
         <br />
-        Feel free to get in touch with me whenever you need assistance or want
-        to discuss anything. I'm here to help you with pleasure! 🚀
+        Silakan hubungi saya kapan pun Anda membutuhkan bantuan atau ingin berdiskusi. Saya siap membantu dengan senang hati.
+
+ 🚀
       </p>
 
       <form
@@ -99,14 +98,14 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="Email Anda"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           className="h-40 bg-white my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder="Pesan Anda"
           required
           maxLength={5000}
           value={message}

@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import Image from "next/image";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -18,7 +19,7 @@ export default function Experience() {
   return (
     <div className="mb-28 sm:mb-40">
       <section id="experience" ref={ref} className="scroll-mt-28">
-        <SectionHeading>🏢 Work Experiences</SectionHeading>
+        <SectionHeading>Pengalaman Kepanitiaan</SectionHeading>
       </section>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -46,6 +47,22 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
+              {/* LOGIKA TAMPILAN GAMBAR DIMODIFIKASI DI SINI */}
+              <div
+                className={`mb-4 grid ${
+                  item.imageUrls.length === 3 ? "grid-cols-3" : "grid-cols-2"
+                } gap-2`}
+              >
+                {item.imageUrls.map((img, imgIndex) => (
+                  <Image
+                    key={imgIndex}
+                    src={img}
+                    alt={`${item.title} photo ${imgIndex + 1}`}
+                    className="rounded-lg shadow-md object-cover w-full h-auto"
+                  />
+                ))}
+              </div>
+
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 text-justify !font-normal text-gray-700 dark:text-white/75">

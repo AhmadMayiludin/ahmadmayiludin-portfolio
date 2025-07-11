@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import SectionHeading from "./section-heading";
-import { skillsData, skilss } from "@/lib/data";
+import { skills } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -40,7 +40,7 @@ export default function Skills() {
         <BurstBload2 />
       </div>
       <div className="grid xl:grid-cols-5 md:grid-cols-4 grid-cols-4 xl:gap-10 md:gap-8 gap-7 items-center">
-        {skilss.map((skill, index) => (
+        {skills.map((skill, index) => (
           <div key={index} className="relative mt-5 flex justify-center">
             <motion.div
               onMouseOver={() => {
