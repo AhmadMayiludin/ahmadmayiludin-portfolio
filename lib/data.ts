@@ -6,6 +6,7 @@ import { FaBullhorn } from "react-icons/fa";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { GiMicrophone } from "react-icons/gi";
+import { FaMobileAlt } from "react-icons/fa";
 
 
 // pengalaman kepanitiaan
@@ -22,6 +23,7 @@ import coachingClinicImg3 from "@/public/images/kegiatan/clc3.jpg";
 import mcSekolahPasarModalImg1 from "@/public/images/kegiatan/spm1.jpg";
 import mcSekolahPasarModalImg2 from "@/public/images/kegiatan/spm2.jpg";
 import mcSekolahPasarModalImg3 from "@/public/images/kegiatan/spm3.jpg";
+
 
 
 
@@ -57,52 +59,73 @@ export const links = [
   },
 ] as const;
 export const experiencesData = [
-    {
-        title: "Divisi Acara - Workshop Nasional AI",
-        location: "Workshop 'Artificial Intelligence in The World of Data Science'",
-        description: "Bertugas mengatur seluruh susunan acara dan melakukan koordinasi langsung dengan para pemateri ahli di bidangnya.", // 
-        date: "2024", // 
-        icon: React.createElement(GiPodium),
-        // DIUBAH: imageUrl menjadi imageUrls dan berisi array gambar
-        imageUrls: [workshopAiImg1, workshopAiImg2, workshopAiImg3],
-    },
-    {
-        title: "Divisi Humas - Rektor Sport Champion",
-        location: "Kompetisi Olahraga Tingkat Universitas",
-        description:
-            "Mengelola komunikasi dan publikasi acara untuk meningkatkan kesadaran serta partisipasi peserta antar prodi.", // 
-        date: "2024", // 
-        icon: React.createElement(FaBullhorn),
-        imageUrls: [rektorCupImg1, rektorCupImg2],
-    },
-    {
-        title: "Divisi Acara - Seminar Nasional Pasar Modal",
-        location: "Seminar 'Pengenalan Sekolah Pasar Modal pada Gen Z'",
-        description:
-            "Bertanggung jawab atas kelancaran teknis acara dan membantu kesiapan narasumber dari awal hingga akhir seminar.", // 
-        date: "2025", // 
-        icon: React.createElement(GiPodium),
-        imageUrls: [seminarPasarModalImg, seminarPasarModalImg1],
-    },
-    {
-        title: "Divisi Acara - Coaching Clinic Investasi",
-        location: "Coaching Clinic 'Cerdas Bertransaksi dan Investasi Hadapi Era Digital'",
-        description:
-            "Menyusun rundown acara secara detail dan memastikan setiap sesi berjalan sesuai dengan rencana yang telah ditetapkan.",
-        date: "2025",
-        icon: React.createElement(FaChalkboardTeacher),
-        imageUrls: [coachingClinicImg1, coachingClinicImg2, coachingClinicImg3],
-    },
-    {
-        title: "Master of Ceremony (MC) - Sekolah Pasar Modal",
-        location: "Edukasi Pasar Modal oleh IDX & MNC Sekuritas",
-        description:
-            "Membawakan dan memandu jalannya acara edukasi pasar modal, bekerja sama langsung dengan narasumber dari Bursa Efek Indonesia dan MNC Sekuritas.",
-        date: "2025",
-        icon: React.createElement(GiMicrophone),
-        imageUrls: [mcSekolahPasarModalImg1, mcSekolahPasarModalImg2, mcSekolahPasarModalImg3],
-    },
-] as const; 
+  {
+    title: "Divisi Acara - Workshop Nasional AI",
+    location: "Workshop 'Artificial Intelligence in The World of Data Science'",
+    description: "Bertugas mengatur seluruh susunan acara dan melakukan koordinasi langsung dengan para pemateri ahli di bidangnya.", // 
+    date: "2024", // 
+    icon: React.createElement(GiPodium),
+    // DIUBAH: imageUrl menjadi imageUrls dan berisi array gambar
+    imageUrls: [workshopAiImg1, workshopAiImg2, workshopAiImg3],
+  },
+  {
+    title: "Divisi Humas - Rektor Sport Champion",
+    location: "Kompetisi Olahraga Tingkat Universitas",
+    description:
+      "Mengelola komunikasi dan publikasi acara untuk meningkatkan kesadaran serta partisipasi peserta antar prodi.", // 
+    date: "2024", // 
+    icon: React.createElement(FaBullhorn),
+    imageUrls: [rektorCupImg1, rektorCupImg2],
+  },
+  {
+    title: "Divisi Acara - Seminar Nasional Pasar Modal",
+    location: "Seminar 'Pengenalan Sekolah Pasar Modal pada Gen Z'",
+    description:
+      "Bertanggung jawab atas kelancaran teknis acara dan membantu kesiapan narasumber dari awal hingga akhir seminar.", // 
+    date: "2025", // 
+    icon: React.createElement(GiPodium),
+    imageUrls: [seminarPasarModalImg, seminarPasarModalImg1],
+  },
+  {
+    title: "Divisi Acara - Coaching Clinic Investasi",
+    location: "Coaching Clinic 'Cerdas Bertransaksi dan Investasi Hadapi Era Digital'",
+    description:
+      "Menyusun rundown acara secara detail dan memastikan setiap sesi berjalan sesuai dengan rencana yang telah ditetapkan.",
+    date: "2025",
+    icon: React.createElement(FaChalkboardTeacher),
+    imageUrls: [coachingClinicImg1, coachingClinicImg2, coachingClinicImg3],
+  },
+  {
+    title: "Master of Ceremony (MC) - Sekolah Pasar Modal",
+    location: "Edukasi Pasar Modal oleh IDX & MNC Sekuritas",
+    description:
+      "Membawakan dan memandu jalannya acara edukasi pasar modal, bekerja sama langsung dengan narasumber dari Bursa Efek Indonesia dan MNC Sekuritas.",
+    date: "2025",
+    icon: React.createElement(GiMicrophone),
+    imageUrls: [mcSekolahPasarModalImg1, mcSekolahPasarModalImg2, mcSekolahPasarModalImg3],
+  },
+] as const;
+
+export const workExperienceData = [
+  {
+    title: "Mobile App Developer Intern",
+    company: "PERUMDA Tirta Bhagasasi",
+    division: "Divisi Teknologi Informasi",
+    date: "Oktober 2025 – Januari 2026",
+    description: [
+      "Merancang dan mengembangkan aplikasi mobile manajemen aset inventaris perusahaan dari tahap inisialisasi hingga deployment menggunakan framework Ionic Angular.",
+      "Mengintegrasikan Google ML Kit via Capacitor untuk fitur pemindaian QR Code & Barcode guna identifikasi aset secara otomatis dan real-time.",
+      "Membangun sistem form dinamis yang terintegrasi dengan RESTful API perusahaan, termasuk logika konversi Base64 ke Blob untuk fitur upload foto via FormData.",
+      "Melakukan testing, debugging, dan validasi endpoint API secara komprehensif menggunakan Postman sebelum build ke APK Release.",
+    ],
+    icon: React.createElement(FaMobileAlt),
+    imageUrls: [
+      "/images/internship/intern1.png",
+      "/images/internship/intern2.png",
+    ],
+    tech: ["Ionic", "Angular", "TypeScript", "REST API", "Google ML Kit"],
+  },
+] as const;
 
 // lib/data.ts
 
@@ -140,7 +163,7 @@ export const projectsData = [
     description:
       "Aplikasi web komprehensif untuk Admin, Pelayan, dan Koki. Sistem ini menangani manajemen menu, pengelolaan pesanan, laporan penjualan, hingga pemantauan aktivitas dapur secara terpusat.", // 
     // TODO: Ganti dengan path screenshot aplikasi admin/pelayan Anda
-  
+
     screenshots: [
       "images/project/restopos-admin/1.png",
       "images/project/restopos-admin/2.png",
@@ -152,8 +175,8 @@ export const projectsData = [
       "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
       "/images/icon/mysql.svg",
       "/images/icon/bootstrap.svg",
-       "/images/icon/php.svg",
-      
+      "/images/icon/php.svg",
+
     ],
     demoUrl: null,
     githubUrl: null, // Isi dengan link ke repo backend Laravel jika ada
@@ -194,29 +217,29 @@ export const projectsData = [
     languages: ["Ionic", "Angular", "TypeScript"], // Sesuaikan dengan teknologi yang Anda gunakan
   },
   {
-title: "Desain UI/UX - Aplikasi Restoran RestoPOS",
-description:
-"Merancang seluruh antarmuka (UI) dan pengalaman pengguna (UX) untuk sistem restoran 'RestoPOS'. Desain ini mencakup alur untuk empat peran pengguna: Pelanggan, Pelayan/Kasir, Koki, dan Admin, dengan fokus pada kemudahan penggunaan dan efisiensi operasional.",
-// TODO: Gunakan gambar komposit dari Figma sebagai gambar utama
-image: "images/project/UIUX/1.png",
-// TODO: Siapkan beberapa screenshot close-up dari desain terbaik Anda
-screenshots: [
-        "images/project/UIUX/1.png",,
+    title: "Desain UI/UX - Aplikasi Restoran RestoPOS",
+    description:
+      "Merancang seluruh antarmuka (UI) dan pengalaman pengguna (UX) untuk sistem restoran 'RestoPOS'. Desain ini mencakup alur untuk empat peran pengguna: Pelanggan, Pelayan/Kasir, Koki, dan Admin, dengan fokus pada kemudahan penggunaan dan efisiensi operasional.",
+    // TODO: Gunakan gambar komposit dari Figma sebagai gambar utama
+    image: "images/project/UIUX/1.png",
+    // TODO: Siapkan beberapa screenshot close-up dari desain terbaik Anda
+    screenshots: [
+      "images/project/UIUX/1.png", ,
     ],
-// Teknologi yang digunakan adalah tools desain
-tech: [
-"/images/icon/figma.svg",
-],
-// TODO: Jika prototype Figma Anda bisa diakses publik, taruh link-nya di sini
-demoUrl: null,
-githubUrl: null, // Tidak perlu untuk proyek desain
-features: [
-"Desain User Flow untuk 4 Peran Pengguna",
-"Prototyping Interaktif untuk Simulasi Aplikasi",
-"Perancangan Mockup Detail untuk Aplikasi Mobile dan Web",
-"Desain Berbasis Komponen yang Konsisten",
-],
-languages: ["Figma", "Draw.io"],
+    // Teknologi yang digunakan adalah tools desain
+    tech: [
+      "/images/icon/figma.svg",
+    ],
+    // TODO: Jika prototype Figma Anda bisa diakses publik, taruh link-nya di sini
+    demoUrl: null,
+    githubUrl: null, // Tidak perlu untuk proyek desain
+    features: [
+      "Desain User Flow untuk 4 Peran Pengguna",
+      "Prototyping Interaktif untuk Simulasi Aplikasi",
+      "Perancangan Mockup Detail untuk Aplikasi Mobile dan Web",
+      "Desain Berbasis Komponen yang Konsisten",
+    ],
+    languages: ["Figma", "Draw.io"],
   },
   {
     title: "Desain UI/UX - Website Manajemen UMKM",
@@ -224,7 +247,7 @@ languages: ["Figma", "Draw.io"],
       "Perancangan desain antarmuka (UI) dan pengalaman pengguna (UX) untuk platform web UMKM. Desain mencakup halaman marketing (landing page, layanan) dan dashboard internal untuk manajemen penjualan, stok, dan laporan.",
     // TODO: Siapkan screenshot dari desain Figma Anda
     screenshots: [
-        "images/project/umkm-deign/1.png",
+      "images/project/umkm-deign/1.png",
     ],
     image: "images/project/umkm-deign/figma-overview.png",
     tech: ["/images/icon/figma.svg"],
@@ -262,24 +285,24 @@ languages: ["Figma", "Draw.io"],
   {
     title: "Aplikasi Pendaftaran Pasien Online",
     description:
-    "Sistem pendaftaran dan pemeriksaan pasien untuk sebuah klinik berbasis web, mempermudah alur administrasi dan pencatatan data medis.",
+      "Sistem pendaftaran dan pemeriksaan pasien untuk sebuah klinik berbasis web, mempermudah alur administrasi dan pencatatan data medis.",
     // TODO: Siapkan screenshot untuk proyek ini
     screenshots: [
-    "images/project/pasien/1.png",
-    "images/project/pasien/2.png",
-    "images/project/pasien/3.png",
+      "images/project/pasien/1.png",
+      "images/project/pasien/2.png",
+      "images/project/pasien/3.png",
     ],
     image: "images/project/pasien/1.png",
-            
+
     tech: [
-    "/images/icon/php.svg",
-    "/images/icon/mysql.svg",
+      "/images/icon/php.svg",
+      "/images/icon/mysql.svg",
     ],
     demoUrl: null,
     githubUrl: null,
     features: [
-    "Pendaftaran Pasien Online: Memudahkan pasien baru untuk mendaftar tanpa antre.",
-    "Pencatatan Pemeriksaan: Dokter dapat menginput hasil pemeriksaan secara digital.",
+      "Pendaftaran Pasien Online: Memudahkan pasien baru untuk mendaftar tanpa antre.",
+      "Pencatatan Pemeriksaan: Dokter dapat menginput hasil pemeriksaan secara digital.",
     ],
     languages: ["PHP Native", "MySQL"],
   },
@@ -332,29 +355,29 @@ languages: ["Figma", "Draw.io"],
     ],
     languages: ["Python", "OpenCV", "Scikit-learn"],
   },
-    {
-  title: "Desain Topologi Jaringan Universitas",
-  description:
-  "Merancang dan mensimulasikan topologi jaringan untuk sebuah universitas dengan 2 gedung dan 4 fakultas menggunakan Cisco Packet Tracer. Proyek ini mengimplementasikan routing dinamis antar gedung (BGP) dan internal (OSPF).",
-  // TODO: Ganti dengan path screenshot Anda
-  screenshots: [
-  "images/project/jaringan/topologi.png",
-  ],
-  image: "images/project/jaringan/topologi.png", // Gunakan screenshot topologi utama di sini
-  // TODO: Siapkan ikon untuk teknologi ini
-  tech: [
-  "/images/icon/cisco.svg",
-  ],
-  demoUrl: null,
-  // TODO: Ganti dengan link ke repositori GitHub Anda untuk proyek ini
-  githubUrl: "#",
-  features: [
-  "Routing Dinamis Antar Gedung dengan BGP: Mengkonfigurasi setiap gedung sebagai Autonomous System (AS) yang berbeda.",
-  "Routing Internal Gedung dengan OSPF: Memastikan semua perangkat di dalam satu gedung dapat berkomunikasi secara efisien.",
-  "Implementasi VLAN: Memisahkan traffic antar departemen untuk meningkatkan keamanan dan performa jaringan.",
-  "Konfigurasi DHCP & IP Statis: Menerapkan skema pengalamatan IP yang berbeda sesuai kebutuhan setiap fakultas.",
-  ],
-  languages: ["Cisco Packet Tracer", "OSPF", "BGP", "VLAN", "DHCP"],
+  {
+    title: "Desain Topologi Jaringan Universitas",
+    description:
+      "Merancang dan mensimulasikan topologi jaringan untuk sebuah universitas dengan 2 gedung dan 4 fakultas menggunakan Cisco Packet Tracer. Proyek ini mengimplementasikan routing dinamis antar gedung (BGP) dan internal (OSPF).",
+    // TODO: Ganti dengan path screenshot Anda
+    screenshots: [
+      "images/project/jaringan/topologi.png",
+    ],
+    image: "images/project/jaringan/topologi.png", // Gunakan screenshot topologi utama di sini
+    // TODO: Siapkan ikon untuk teknologi ini
+    tech: [
+      "/images/icon/cisco.svg",
+    ],
+    demoUrl: null,
+    // TODO: Ganti dengan link ke repositori GitHub Anda untuk proyek ini
+    githubUrl: "#",
+    features: [
+      "Routing Dinamis Antar Gedung dengan BGP: Mengkonfigurasi setiap gedung sebagai Autonomous System (AS) yang berbeda.",
+      "Routing Internal Gedung dengan OSPF: Memastikan semua perangkat di dalam satu gedung dapat berkomunikasi secara efisien.",
+      "Implementasi VLAN: Memisahkan traffic antar departemen untuk meningkatkan keamanan dan performa jaringan.",
+      "Konfigurasi DHCP & IP Statis: Menerapkan skema pengalamatan IP yang berbeda sesuai kebutuhan setiap fakultas.",
+    ],
+    languages: ["Cisco Packet Tracer", "OSPF", "BGP", "VLAN", "DHCP"],
   },
 ] as const;
 

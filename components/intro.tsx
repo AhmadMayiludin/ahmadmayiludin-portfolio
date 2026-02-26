@@ -65,9 +65,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <b>Software Developer & Tech Enthusiast</b> dengan keahlian di bidang{" "}
-        <b>Web Development, Computer Vision,</b> dan <b>UI/UX Design</b>. Saya
-        bersemangat mengubah ide kompleks menjadi solusi teknologi yang
+        <b>Full Stack Developer & Mobile Specialist</b> yang berfokus pada pengembangan{" "}
+        <b>Web, Aplikasi Mobile,</b> dan <b>Computer Vision.</b> Berpengalaman dalam mengubah ide kompleks menjadi solusi teknologi yang fungsional, modern, dan user-friendly.
         fungsional dan modern.
       </motion.p>
       <motion.div

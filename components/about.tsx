@@ -22,14 +22,31 @@ export default function About() {
         <SectionHeading>👨‍💻 About Me</SectionHeading>
         <BurstBload />
       </div>
-      <p className="mb-3">
-    Hallo, Saya Ahmad Mayiludin! Saya adalah mahasiswa semester 4 di Universitas Buana Perjuangan Karawang dengan IPK 3.75. Di luar akademik, saya aktif menempa soft skill melalui berbagai organisasi kampus, mulai dari Himpunan Mahasiswa Teknik Informatika (HIMATIF) hingga Unit Kegiatan Mahasiswa.
-  </p>
+      <p className="mb-4">
+        Halo, saya <span className="font-medium">Ahmad Mayiludin!</span> Saat ini saya adalah mahasiswa semester 6 di{" "}
+        <span className="font-medium">Universitas Buana Perjuangan Karawang</span> dengan IPK{" "}
+        <span className="font-medium">3.77</span>. Saya adalah seorang pengembang yang aktif dan
+        berdedikasi, baik dalam akademik maupun pengembangan solusi teknologi di dunia nyata.
+      </p>
 
-  {/* Paragraf kedua */}
-  <p>
-    Saya memiliki pengalaman dalam pengembangan web menggunakan <span className="font-medium">PHP dan Laravel</span>, serta pengembangan aplikasi mobile dengan <span className="font-medium">Ionic Angular.</span> Saya berkomitmen untuk terus belajar, berkembang, dan memberikan kontribusi nyata di dunia teknologi.
-  </p>
+      <p className="mb-2 font-medium">Fokus Utama:</p>
+      <ul className="mb-4 text-left space-y-1">
+        <li>
+          🖥️ <span className="font-medium">Full Stack & Mobile:</span> Spesialis Laravel & Ionic Angular.
+        </li>
+        <li>
+          🔐 <span className="font-medium">Cyber Security:</span> Kontributor proyek Open Source keamanan siber.
+        </li>
+        <li>
+          🤖 <span className="font-medium">Future Tech:</span> Implementasi Computer Vision & UI/UX Design.
+        </li>
+      </ul>
+
+      <p>
+        Selain fokus pada teknis, saya memiliki pengalaman organisasi di kampus yang telah membentuk
+        karakter kepemimpinan dan kerjasama tim saya. Saya selalu terbuka untuk tantangan baru dan
+        kolaborasi inovatif di dunia digital.
+      </p>
     </motion.section>
   );
 }
